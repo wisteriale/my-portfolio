@@ -104,7 +104,7 @@ const PROJECTS = [
     name: '知識可視化ツール 「ピークる」',
     badge: 'チーム開発（GDGoC Hackathon）',
     description: 'Geminiとの会話履歴をインポートし、自分の知識を可視化するモバイルアプリ。分かったつもりを解消するため、音声入力によるテスト機能も実装している。AI賞・LGTM賞を受賞。',
-    technologies: ['Flutter', 'Gemini API', 'Cloud API'],
+    technologies: ['Flutter', 'Gemini API', 'Cloud Speech-to-Text API'],
     link: 'https://www.youtube.com/watch?v=Zxepl8I90kQ&t=5537s',
     slideLink: 'https://canva.link/r4c3usa57wy0ie4',
     image: imgPeakru,
