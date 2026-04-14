@@ -283,19 +283,19 @@ export default function Portfolio() {
             <span /><span /><span />
           </button>
         </div>
-        <div className={`mobile-menu ${mobileMenuOpen ? 'mobile-menu--open' : ''}`}>
-          <ul>
-            {NAV_ITEMS.map((item) => (
-              <li key={item.id}>
-                <a href={`#${item.id}`} className={activeSection === item.id ? 'active' : ''}
-                  onClick={(e) => { e.preventDefault(); scrollTo(item.id) }}>
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
       </header>
+      <div className={`mobile-menu ${mobileMenuOpen ? 'mobile-menu--open' : ''}`}>
+        <ul>
+          {NAV_ITEMS.map((item) => (
+            <li key={item.id}>
+              <a href={`#${item.id}`} className={activeSection === item.id ? 'active' : ''}
+                onClick={(e) => { e.preventDefault(); scrollTo(item.id) }}>
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       {/* Scroll Container */}
       <div className="scroll-container" ref={scrollRef}>
