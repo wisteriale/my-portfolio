@@ -277,7 +277,6 @@ export default function Portfolio() {
               ))}
             </ul>
           </nav>
-          <a href="mailto:f.makoto0514@gmail.com" className="nav__cta">お問い合わせ</a>
           <button className={`nav__hamburger ${mobileMenuOpen ? 'open' : ''}`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="メニュー">
             <span /><span /><span />

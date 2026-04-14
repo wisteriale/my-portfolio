@@ -121,6 +121,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .nav__logo {
@@ -148,6 +149,12 @@ img {
   transform: rotate(-5deg) scale(1.06);
 }
 
+.nav__links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .nav__links ul {
   display: flex;
   gap: 20px;
@@ -172,22 +179,6 @@ img {
 .nav__links a.active {
   color: #111;
   background: rgba(0, 0, 0, 0.08);
-}
-
-.nav__cta {
-  padding: 10px 20px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #fff;
-  background: #111;
-  border-radius: var(--radius-full);
-  transition: all 0.2s;
-  letter-spacing: 0.04em;
-}
-
-.nav__cta:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
 }
 
 .nav__hamburger {
@@ -1445,8 +1436,7 @@ img {
     padding: 0 20px;
   }
 
-  .nav__links,
-  .nav__cta {
+  .nav__links {
     display: none;
   }
 
